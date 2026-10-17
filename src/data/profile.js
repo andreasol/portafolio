@@ -21,6 +21,7 @@ export const navLinks = [
   { label: "Proyectos", href: "#proyectos" },
   { label: "Habilidades", href: "#habilidades" },
   { label: "Trayectoria", href: "#sobre-mi" },
+  { label: "Conocimiento", href: "#conocimiento" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -67,6 +68,8 @@ export const skills = [
   { label: "Programación orientada a objetos", tone: "bg-mint", rotate: "-rotate-2" },
   { label: "Python", tone: "bg-lilac", rotate: "rotate-1" },
   { label: "Prompts de sistema para IAs", tone: "bg-mint", rotate: "-rotate-3" },
+  { label: "Kiro", tone: "bg-sand", rotate: "rotate-2" },
+  { label: "Claude Code", tone: "bg-coral", rotate: "-rotate-2" },
   { label: "Snap! y Scratch", tone: "bg-sand", rotate: "rotate-3" },
   { label: "Docencia con juegos", tone: "bg-coral", rotate: "-rotate-3" },
 ];
@@ -105,3 +108,12 @@ export const featured = {
     },
   ],
 };
+
+// Formación y conocimiento adicional
+export const knowledge = [
+  {
+    title: "Bootcamp de herramientas con Kiro y Claude Code",
+    text: "Bootcamp centrado en usar herramientas de desarrollo con IA para resolver problemas y dolores reales. Con él construí este portafolio.",
+    tools: ["Kiro", "Claude Code"],
+  },
+];

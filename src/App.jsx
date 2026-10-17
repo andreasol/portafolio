@@ -4,6 +4,7 @@ import ContraBiasFeature from "./components/ContraBiasFeature.jsx";
 import ProjectList from "./components/ProjectList.jsx";
 import SkillChips from "./components/SkillChips.jsx";
 import About from "./components/About.jsx";
+import Knowledge from "./components/Knowledge.jsx";
 import ArcadeScore from "./components/ArcadeScore.jsx";
 import Contact from "./components/Contact.jsx";
 
@@ -18,6 +19,7 @@ export default function App() {
         <SkillChips />
         <ArcadeScore />
         <About />
+        <Knowledge />
         <Contact />
       </main>
     </>
