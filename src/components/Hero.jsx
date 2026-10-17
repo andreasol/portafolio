@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import GameConsole from "./GameConsole.jsx";
 import { profile, heroFacts } from "../data/profile.js";
 
 // Retraso escalonado para la entrada (único movimiento orquestado de la página)
@@ -54,22 +55,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div
-          className="rise flex flex-col gap-3 rounded-[32px] bg-arcade p-4 sm:p-5"
-          style={delay(200)}
-        >
-          <div className="flex items-center justify-between font-pixel text-[10px] uppercase">
-            <span className="blink text-white">1UP</span>
-            <span className="text-pac">Referencia en Scratch</span>
-          </div>
-          <iframe
-            src="https://scratch.mit.edu/projects/17417607/embed"
-            title="Pac-Man jugable hecho en Scratch, usado como referencia para el curso de Snap!"
-            loading="lazy"
-            allowFullScreen
-            className="aspect-[485/402] w-full rounded-2xl border-0"
-          />
-        </div>
+        <GameConsole projectId="17417607" delayMs={200} />
       </div>
     </section>
   );
