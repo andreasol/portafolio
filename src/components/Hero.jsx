@@ -1,6 +1,4 @@
 import { ArrowRight } from "lucide-react";
-import PacMan from "./PacMan.jsx";
-import Ghost from "./Ghost.jsx";
 import { profile, heroFacts } from "../data/profile.js";
 
 // Retraso escalonado para la entrada (único movimiento orquestado de la página)
@@ -57,24 +55,20 @@ export default function Hero() {
         </div>
 
         <div
-          className="rise relative grid min-h-[260px] place-items-center overflow-hidden rounded-[32px] bg-arcade p-6"
+          className="rise flex flex-col gap-3 rounded-[32px] bg-arcade p-4 sm:p-5"
           style={delay(200)}
         >
-          <span className="blink absolute left-5 top-5 font-pixel text-sm text-white">
-            1UP
-          </span>
-          <div className="flex items-center gap-4">
-            <PacMan size={64} />
-            <span className="flex gap-3" aria-hidden="true">
-              <span className="h-3 w-3 rounded-full bg-sand" />
-              <span className="h-3 w-3 rounded-full bg-sand" />
-              <span className="h-3 w-3 rounded-full bg-sand" />
-            </span>
-            <Ghost size={44} className="bob" />
+          <div className="flex items-center justify-between font-pixel text-[10px] uppercase">
+            <span className="blink text-white">1UP</span>
+            <span className="text-pac">Referencia en Scratch</span>
           </div>
-          <p className="absolute bottom-5 px-4 text-center font-pixel text-[10px] uppercase text-pac">
-            Pac-Man en Snap!
-          </p>
+          <iframe
+            src="https://scratch.mit.edu/projects/88947893/embed"
+            title="Pac-Man jugable hecho en Scratch, usado como referencia para el curso de Snap!"
+            loading="lazy"
+            allowFullScreen
+            className="aspect-[485/402] w-full rounded-2xl border-0"
+          />
         </div>
       </div>
     </section>
