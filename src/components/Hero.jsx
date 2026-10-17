@@ -64,13 +64,13 @@ export default function Hero() {
             1UP
           </span>
           <div className="flex items-center gap-4">
-            <PacMan size={120} />
+            <PacMan size={64} />
             <span className="flex gap-3" aria-hidden="true">
               <span className="h-3 w-3 rounded-full bg-sand" />
               <span className="h-3 w-3 rounded-full bg-sand" />
               <span className="h-3 w-3 rounded-full bg-sand" />
             </span>
-            <Ghost size={64} className="bob" />
+            <Ghost size={44} className="bob" />
           </div>
           <p className="absolute bottom-5 px-4 text-center font-pixel text-[10px] uppercase text-pac">
             Pac-Man en Snap!
