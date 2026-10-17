@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import CalendlyButton from "./CalendlyButton.jsx";
 import GameConsole from "./GameConsole.jsx";
 import { profile, heroFacts } from "../data/profile.js";
 
@@ -52,6 +53,7 @@ export default function Hero() {
             >
               Contactar
             </a>
+            <CalendlyButton className="bg-ink text-white hover:bg-grape" />
           </div>
         </div>
 

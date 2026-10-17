@@ -4,6 +4,8 @@ export const profile = {
   fullName: "Andrea Solange Freire Moran",
   role: "Investigadora en ciencias de la computación",
   email: "andrea.freire@usm.cl",
+  // Pega aquí tu enlace de Calendly (https://calendly.com/tu-usuario/30min). Vacío = el botón no se muestra.
+  calendlyUrl: "",
   availability: "Abierta a colaboraciones",
   heroTitle: "Evalúo sesgos de género en los modelos de lenguaje.",
   heroLead:
