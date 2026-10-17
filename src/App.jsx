@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import ContraBiasFeature from "./components/ContraBiasFeature.jsx";
+import BootcampApp from "./components/BootcampApp.jsx";
 import ProjectList from "./components/ProjectList.jsx";
 import SkillChips from "./components/SkillChips.jsx";
 import About from "./components/About.jsx";
@@ -15,6 +16,7 @@ export default function App() {
       <main>
         <Hero />
         <ContraBiasFeature />
+        <BootcampApp />
         <ProjectList />
         <SkillChips />
         <ArcadeScore />

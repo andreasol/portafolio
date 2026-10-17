@@ -119,3 +119,28 @@ export const knowledge = [
     tools: ["Kiro", "Claude Code"],
   },
 ];
+
+// Aplicación construida en el bootcamp (se muestra después de ContraBias)
+export const bootcampApp = {
+  tag: "Aplicación del bootcamp",
+  name: "Cola de cierre",
+  summary:
+    "Aplicación web para revisar las diferencias entre la planilla local de cada persona y la planilla global, y ordenarlas antes del cierre del período.",
+  points: [
+    {
+      title: "El dolor real",
+      text: "Antes de cerrar el período hay que encontrar y ordenar los datos que no coinciden entre la planilla local y la global.",
+    },
+    {
+      title: "Acceso por región",
+      text: "Cada persona ve solo los registros de su país o región; la base de datos filtra antes de mostrar la información.",
+    },
+    {
+      title: "Acceso con cuenta",
+      text: "Se entra con correo y contraseña, y un administrador asigna el rol de cada persona.",
+    },
+  ],
+  tools: ["Kiro", "Claude Code"],
+  link: { label: "Abrir la aplicación", href: "https://bootcamp-caso-6.vercel.app/" },
+  note: "Requiere cuenta: la pantalla de acceso es lo único visible sin iniciar sesión.",
+};
