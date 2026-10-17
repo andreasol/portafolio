@@ -7,13 +7,13 @@ export const profile = {
   availability: "Abierta a colaboraciones",
   heroTitle: "Evalúo sesgos de género en los modelos de lenguaje.",
   heroLead:
-    "Investigación aplicada en procesamiento del lenguaje natural y tecnologías lingüísticas responsables.",
+    "Investigo sesgos de género en procesamiento del lenguaje natural y enseño programación orientada a objetos con juegos en Snap!, Scratch y Python.",
 };
 
 export const heroFacts = [
   { label: "Línea", value: "Sesgos de género en PLN" },
   { label: "Universidad", value: "UTFSM, Doctorado en Informática" },
-  { label: "Docencia", value: "Profesora de jornada parcial" },
+  { label: "Docencia", value: "POO con juegos en Snap!, Scratch y Python" },
 ];
 
 export const navLinks = [
@@ -46,10 +46,10 @@ export const projects = [
   },
   {
     tag: "Docencia",
-    title: "Pac-Man en Snap!",
-    status: "Proyecto del curso",
+    title: "Programación orientada a objetos con juegos",
+    status: "Snap!, Scratch y Python",
     summary:
-      "Implementé Pac-Man para el curso de Snap!. La referencia disponible era de Scratch y no se podía trasladar directamente, porque el entorno y sus bloques son distintos.",
+      "Enseño programación orientada a objetos con juegos, en Snap!, Scratch y Python. Un ejemplo es el Pac-Man que implementé para el curso de Snap!: la referencia disponible era de Scratch y no se podía trasladar directamente, porque el entorno y sus bloques son distintos.",
     icon: "Gamepad2",
     tone: "sand",
   },
@@ -73,8 +73,10 @@ export const skills = [
   { label: "Linux, Unix y Windows", tone: "bg-lilac", rotate: "rotate-2" },
   { label: "Alta disponibilidad con DRBD y Heartbeat", tone: "bg-sand", rotate: "-rotate-6" },
   { label: "Respaldo y replicación", tone: "bg-coral", rotate: "rotate-3" },
-  { label: "Programación visual en Snap!", tone: "bg-mint", rotate: "-rotate-2" },
-  { label: "Docencia de programación", tone: "bg-lilac", rotate: "rotate-1" },
+  { label: "Programación orientada a objetos", tone: "bg-mint", rotate: "-rotate-2" },
+  { label: "Python", tone: "bg-lilac", rotate: "rotate-1" },
+  { label: "Snap! y Scratch", tone: "bg-sand", rotate: "rotate-3" },
+  { label: "Docencia con juegos", tone: "bg-coral", rotate: "-rotate-3" },
 ];
 
 export const score = [
@@ -84,6 +86,6 @@ export const score = [
 ];
 
 export const about = [
-  "Soy ingeniera en Telemática, tengo dos másteres relacionados con seguridad informática e inteligencia artificial y curso el Doctorado en Informática en la Universidad Técnica Federico Santa María. Soy profesora de jornada parcial desde 2024.",
+  "Soy ingeniera en Telemática, tengo dos másteres relacionados con seguridad informática e inteligencia artificial y curso el Doctorado en Informática en la Universidad Técnica Federico Santa María. Soy profesora de jornada parcial desde 2024 y enseño programación orientada a objetos con juegos, en Snap!, Scratch y Python.",
   "Antes de la investigación construí sistemas: un sistema hospitalario, aplicaciones y un geoportal para los Andes Tropicales y una base de datos regional para la OMM. También trabajé en administración de sistemas y ciberseguridad.",
 ];

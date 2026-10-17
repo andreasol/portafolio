@@ -7,8 +7,8 @@ export default function SkillChips() {
         <div>
           <h2 className="text-2xl font-semibold sm:text-4xl">Habilidades</h2>
           <p className="mt-3 text-ink/80">
-            De la evaluación de sesgos en modelos de lenguaje a la administración de sistemas
-            y la docencia de programación.
+            De la evaluación de sesgos en modelos de lenguaje a la enseñanza de programación
+            orientada a objetos con juegos y la administración de sistemas.
           </p>
         </div>
 
