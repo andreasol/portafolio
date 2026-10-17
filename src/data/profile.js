@@ -12,11 +12,12 @@ export const profile = {
 
 export const heroFacts = [
   { label: "Línea", value: "Sesgos de género en PLN" },
-  { label: "Universidad", value: "UTFSM, Doctorado en Informática" },
+  { label: "Destacado", value: "ContraBias: skill para IAs y paper" },
   { label: "Docencia", value: "POO con juegos en Snap!, Scratch y Python" },
 ];
 
 export const navLinks = [
+  { label: "ContraBias", href: "#contrabias" },
   { label: "Proyectos", href: "#proyectos" },
   { label: "Habilidades", href: "#habilidades" },
   { label: "Trayectoria", href: "#sobre-mi" },
@@ -25,16 +26,6 @@ export const navLinks = [
 
 // icon: nombre del ícono de lucide-react; tone: color de la fila
 export const projects = [
-  {
-    tag: "Investigación",
-    title: "ContraBias: plugin de prompt contrafactual",
-    status: "Aceptado en conferencia · no publicado",
-    summary:
-      "Evalúa si instrucciones contrafactuales reducen el sesgo de género al traducir ocupaciones. Diseñé el plugin y evalué 900 casos con medidas separadas para errores pronominales, asignación de género a ocupaciones y cumplimiento del plugin. Son indicadores léxicos exploratorios, no prueban una mitigación causal.",
-    icon: "FlaskConical",
-    tone: "lilac",
-    link: { label: "Ver repositorio", href: "https://github.com/andreasol/ContraBias/" },
-  },
   {
     tag: "Revisión",
     title: "Revisión paraguas sobre sesgo de género en PLN",
@@ -75,6 +66,7 @@ export const skills = [
   { label: "Respaldo y replicación", tone: "bg-coral", rotate: "rotate-3" },
   { label: "Programación orientada a objetos", tone: "bg-mint", rotate: "-rotate-2" },
   { label: "Python", tone: "bg-lilac", rotate: "rotate-1" },
+  { label: "Prompts de sistema para IAs", tone: "bg-mint", rotate: "-rotate-3" },
   { label: "Snap! y Scratch", tone: "bg-sand", rotate: "rotate-3" },
   { label: "Docencia con juegos", tone: "bg-coral", rotate: "-rotate-3" },
 ];
@@ -89,3 +81,27 @@ export const about = [
   "Soy ingeniera en Telemática, tengo dos másteres relacionados con seguridad informática e inteligencia artificial y curso el Doctorado en Informática en la Universidad Técnica Federico Santa María. Soy profesora de jornada parcial desde 2024 y enseño programación orientada a objetos con juegos, en Snap!, Scratch y Python.",
   "Antes de la investigación construí sistemas: un sistema hospitalario, aplicaciones y un geoportal para los Andes Tropicales y una base de datos regional para la OMM. También trabajé en administración de sistemas y ciberseguridad.",
 ];
+
+// Proyecto destacado: se muestra en su propia sección, antes de la lista.
+export const featured = {
+  name: "ContraBias",
+  subtitle: "A Counterfactual System Prompt Plugin for Gender Bias Mitigation",
+  badges: ["Skill para IAs", "Paper aceptado en las Jornadas Chilenas"],
+  note: "Aún no está publicado. Falta confirmar el nombre completo y la fecha de la presentación.",
+  link: { label: "Ver el skill en GitHub", href: "https://github.com/andreasol/ContraBias/" },
+  stat: { value: "900", label: "casos de traducción de ocupaciones evaluados" },
+  steps: [
+    {
+      title: "El problema",
+      text: "Al traducir ocupaciones, los modelos de lenguaje asignan género y eligen pronombres con sesgo. Estudio si instrucciones contrafactuales pueden reducirlo.",
+    },
+    {
+      title: "Qué construí",
+      text: "ContraBias es un skill para IAs: un plugin de prompt de sistema contrafactual. Lo diseñé y lo evalué yo.",
+    },
+    {
+      title: "Cómo lo medí",
+      text: "Con medidas separadas para errores pronominales, asignación de género a ocupaciones y cumplimiento del plugin. Son indicadores léxicos exploratorios: no prueban por sí solos una mitigación causal ni definitiva.",
+    },
+  ],
+};
