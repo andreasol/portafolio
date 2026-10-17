@@ -9,7 +9,7 @@ export default function ArcadeScore() {
         <div className="rounded-[24px] border-[3px] border-maze p-5 sm:p-8">
           <div className="flex items-center justify-between font-pixel text-xs text-white sm:text-sm">
             <span>1UP</span>
-            <span>Mi récord</span>
+            <span>En números</span>
           </div>
 
           <dl className="mt-8 grid gap-6 sm:grid-cols-3">
