@@ -63,7 +63,7 @@ export default function Hero() {
             <span className="text-pac">Referencia en Scratch</span>
           </div>
           <iframe
-            src="https://scratch.mit.edu/projects/88947893/embed"
+            src="https://scratch.mit.edu/projects/17417607/embed"
             title="Pac-Man jugable hecho en Scratch, usado como referencia para el curso de Snap!"
             loading="lazy"
             allowFullScreen
