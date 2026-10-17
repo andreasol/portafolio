@@ -28,7 +28,7 @@ export const navLinks = [
 export const projects = [
   {
     tag: "Revisión",
-    title: "Revisión paraguas sobre sesgo de género en PLN",
+    title: "Revisión umbrella sobre sesgo de género en PLN",
     status: "Enviado a revista · no publicado",
     summary:
       "Contextualiza 23 revisiones frente a 137 estudios primarios. También tengo un manuscrito sobre RoBERTa y GloVe, enviado a revista y sin publicar.",
@@ -73,7 +73,7 @@ export const skills = [
 
 export const score = [
   { value: "900", label: "Casos de traducción evaluados en ContraBias" },
-  { value: "137", label: "Estudios primarios en la revisión paraguas" },
+  { value: "137", label: "Estudios primarios en la revisión umbrella" },
   { value: "2", label: "Másteres en seguridad informática e IA" },
 ];
 
