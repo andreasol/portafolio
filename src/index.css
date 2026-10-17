@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+  }
+  body {
+    @apply bg-peach font-display text-ink antialiased;
+  }
+  :focus-visible {
+    outline: 3px solid #6b3fd0;
+    outline-offset: 3px;
+    border-radius: 8px;
+  }
+}
+
+/* ---------- Pac-Man: dos mitades que abren y cierran la boca ---------- */
+.pacman {
+  position: relative;
+  width: var(--size, 56px);
+  height: var(--size, 56px);
+}
+.pacman::before,
+.pacman::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #ffe600;
+}
+.pacman::before {
+  top: 0;
+  border-radius: 999px 999px 0 0;
+  transform-origin: 50% 100%;
+  animation: mouth-up 0.35s ease-in-out infinite alternate;
+}
+.pacman::after {
+  bottom: 0;
+  border-radius: 0 0 999px 999px;
+  transform-origin: 50% 0;
+  animation: mouth-down 0.35s ease-in-out infinite alternate;
+}
+@keyframes mouth-up {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-38deg); }
+}
+@keyframes mouth-down {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(38deg); }
+}
+
+/* ---------- Pista de puntos: Pac-Man avanza y se come los puntos ---------- */
+.track-pac {
+  left: 0;
+  transform: translateX(-50%);
+  animation: track-run 7s linear infinite;
+}
+.track-ghost {
+  left: 0;
+  transform: translateX(-50%);
+  animation: track-run 7s linear infinite;
+  animation-delay: 0.9s;
+}
+.track-cover {
+  width: 0;
+  animation: track-eat 7s linear infinite;
+}
+@keyframes track-run {
+  from { left: 0; }
+  to { left: 100%; }
+}
+@keyframes track-eat {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* ---------- Entrada del hero (el único movimiento orquestado) ---------- */
+.rise {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: rise 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+@keyframes rise {
+  to { opacity: 1; transform: none; }
+}
+
+/* ---------- Flotación suave de las etiquetas ---------- */
+.bob {
+  animation: bob 5s ease-in-out infinite;
+}
+@keyframes bob {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -8px; }
+}
+
+/* ---------- Parpadeo "1UP" ---------- */
+.blink {
+  animation: blink 1.2s steps(1) infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Sin movimiento si la persona lo prefiere */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .rise {
+    opacity: 1;
+    transform: none;
+  }
+  .track-pac { left: 100%; }
+  .track-ghost { left: 70%; }
+}
